@@ -4,8 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Renzo Santarena | Model Portfolio</title>
-<meta name="description" content="Renzo Santarena - Model Portfolio. Fashion, Editorial, Advertising and Audiovisual.">
+<meta name="description" content="Renzo Santarena - Fashion Model Portfolio">
 
 <style>
 * {
@@ -19,24 +20,24 @@ html {
 }
 
 body {
-  background: #f7f7f5;
+  background: #eeece7;
   color: #171717;
   font-family: Arial, sans-serif;
 }
 
 header {
-  min-height: 85px;
-  padding: 20px 7%;
+  padding: 24px 6%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #bbb8b1;
+  background: #eeece7;
 }
 
 .logo {
   font-family: Georgia, serif;
-  font-size: 23px;
-  letter-spacing: 3px;
+  font-size: 24px;
+  letter-spacing: 2px;
 }
 
 nav {
@@ -46,193 +47,223 @@ nav {
 }
 
 nav a {
-  color: #222;
+  color: #171717;
   text-decoration: none;
   font-size: 10px;
   letter-spacing: 2px;
 }
 
 nav a:hover {
-  opacity: .5;
+  color: #987e62;
 }
 
 .hero {
-  min-height: 85vh;
+  min-height: 80vh;
+  padding: 65px 7%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: .9fr 1.1fr;
   align-items: center;
-  padding: 55px 8%;
-  gap: 50px;
-}
-
-.hero img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+  gap: 45px;
+  background: #dcd8d0;
 }
 
 .hero-text small {
-  letter-spacing: 4px;
   font-size: 11px;
+  letter-spacing: 4px;
 }
 
 .hero h1 {
   font-family: Georgia, serif;
-  font-size: clamp(45px, 7vw, 90px);
+  font-size: clamp(48px, 7vw, 105px);
+  line-height: .95;
   font-weight: normal;
-  line-height: 1.05;
-  margin: 25px 0;
+  margin: 28px 0;
 }
 
-.hero p {
-  color: #777;
-  letter-spacing: 3px;
-  font-size: 12px;
-  line-height: 1.8;
+.hero-text p {
+  font-size: 11px;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 75vh;
+  object-fit: contain;
+  display: block;
 }
 
 .section {
-  padding: 100px 8%;
+  padding: 90px 6%;
 }
 
-.section-title {
-  font-family: Georgia, serif;
-  font-size: 42px;
-  font-weight: normal;
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
   margin-bottom: 45px;
+  border-bottom: 1px solid #aaa69f;
+  padding-bottom: 20px;
+}
+
+.section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 5vw, 65px);
+  font-weight: normal;
+}
+
+.section-heading span {
+  font-size: 10px;
+  letter-spacing: 2px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: start;
 }
 
 .gallery img {
   width: 100%;
-  height: 600px;
-  object-fit: cover;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain;
   display: block;
+  background: #e1ded8;
+  transition: transform .35s ease;
 }
 
-.gallery img:nth-child(even) {
-  margin-top: 80px;
+.gallery img:hover {
+  transform: scale(1.015);
 }
 
 .about {
-  background: #eae9e6;
+  background: #222;
+  color: #f5f2eb;
+  padding: 110px 12%;
   text-align: center;
-  padding: 110px 15%;
 }
 
-.about h2,
-.contact h2 {
+.about .eyebrow {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #b8a58c;
+}
+
+.about h2 {
   font-family: Georgia, serif;
-  font-size: 48px;
+  font-size: clamp(45px, 6vw, 70px);
   font-weight: normal;
-  margin-bottom: 30px;
+  margin: 25px 0;
 }
 
 .about p {
-  max-width: 700px;
+  max-width: 720px;
   margin: auto;
-  line-height: 1.9;
-  color: #555;
+  color: #d0ccc5;
   font-size: 15px;
+  line-height: 2;
 }
 
 .details {
-  padding: 100px 8%;
+  padding: 90px 7%;
+  background: #dcd8d0;
   text-align: center;
 }
 
-.details h2 {
+.details h2,
+.services h2 {
   font-family: Georgia, serif;
-  font-size: 42px;
+  font-size: 48px;
   font-weight: normal;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .stats {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 65px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stat {
+  padding: 25px 10px;
+  border-top: 1px solid #aaa69f;
 }
 
 .stat h3 {
   font-family: Georgia, serif;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: normal;
-  margin-bottom: 10px;
 }
 
 .stat p {
+  margin-top: 12px;
   font-size: 10px;
-  letter-spacing: 2px;
-  color: #888;
+  letter-spacing: 3px;
 }
 
 .services {
   padding: 90px 8%;
-  background: #eeedea;
   text-align: center;
-}
-
-.services h2 {
-  font-family: Georgia, serif;
-  font-size: 42px;
-  font-weight: normal;
-  margin-bottom: 40px;
+  background: #f7f5f0;
 }
 
 .services p {
-  line-height: 2.5;
-  letter-spacing: 1px;
-  color: #555;
-  font-size: 13px;
-}
-
-.contact {
-  text-align: center;
-  padding: 110px 20px;
-}
-
-.contact h2 {
-  margin-bottom: 25px;
-}
-
-.contact p {
-  color: #777;
-  line-height: 1.8;
-}
-
-.contact a {
-  display: inline-block;
-  margin: 20px 12px;
-  color: #222;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
-  padding-bottom: 5px;
+  line-height: 2.8;
   font-size: 12px;
   letter-spacing: 2px;
 }
 
-footer {
-  padding: 25px;
+.contact {
+  background: #b9a994;
   text-align: center;
-  border-top: 1px solid #ddd;
-  color: #888;
+  padding: 100px 20px;
+}
+
+.contact h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 6vw, 65px);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.contact a {
+  display: inline-block;
+  margin: 35px 12px 0;
+  padding: 14px 25px;
+  border: 1px solid #222;
+  color: #222;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+
+.contact a:hover {
+  background: #222;
+  color: white;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 25px;
   font-size: 10px;
   letter-spacing: 2px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   header {
     flex-direction: column;
-    gap: 20px;
+    gap: 22px;
   }
 
   nav {
@@ -240,56 +271,52 @@ footer {
     gap: 15px;
   }
 
-  nav a {
-    font-size: 9px;
-  }
-
   .hero {
     grid-template-columns: 1fr;
-    padding: 35px 6%;
-    gap: 30px;
-  }
-
-  .hero img {
-    height: 65vh;
+    padding: 45px 6%;
+    gap: 35px;
   }
 
   .hero-text {
     text-align: center;
   }
 
-  .section {
-    padding: 65px 6%;
+  .hero img {
+    max-height: 75vh;
   }
 
   .gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
 
-  .gallery img {
-    height: auto;
-    max-height: 600px;
+  .section {
+    padding: 65px 5%;
   }
 
-  .gallery img:nth-child(even) {
-    margin-top: 0;
+  .section-heading {
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
   }
 
   .about {
     padding: 75px 8%;
   }
 
-  .about h2,
-  .contact h2 {
+  .details h2,
+  .services h2 {
     font-size: 38px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gallery {
+    grid-template-columns: 1fr;
   }
 
   .stats {
-    gap: 35px;
-  }
-
-  .services {
-    padding: 70px 8%;
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -303,7 +330,7 @@ footer {
   <nav>
     <a href="#home">HOME</a>
     <a href="#portfolio">PORTFOLIO</a>
-    <a href="#about">ABOUT ME</a>
+    <a href="#about">ABOUT</a>
     <a href="#details">DETAILS</a>
     <a href="#contact">CONTACT</a>
   </nav>
@@ -311,105 +338,107 @@ footer {
 
 <main>
 
-  <section class="hero">
-    <div class="hero-text">
-      <small>MODEL PORTFOLIO · 2026</small>
-      <h1>RENZO<br>SANTARENA.</h1>
-      <p>
-        FASHION · EDITORIAL<br>
-        ADVERTISING · AUDIOVISUAL
-      </p>
+<section class="hero">
+  <div class="hero-text">
+    <small>MODEL PORTFOLIO · 2026</small>
+    <h1>RENZO<br>SANTARENA.</h1>
+    <p>
+      FASHION · EDITORIAL<br>
+      ADVERTISING · AUDIOVISUAL
+    </p>
+  </div>
+
+  <img src="main.jpg" alt="Renzo Santarena">
+</section>
+
+<section class="section" id="portfolio">
+
+  <div class="section-heading">
+    <h2>Selected Work.</h2>
+    <span>01 — 11 / EDITORIAL</span>
+  </div>
+
+  <div class="gallery">
+    <img src="editorial-01.jpg" alt="Editorial 01">
+    <img src="editorial-02.jpg" alt="Editorial 02">
+    <img src="editorial-03.jpg" alt="Editorial 03">
+    <img src="editorial-04.jpg" alt="Editorial 04">
+    <img src="editorial-05.jpg" alt="Editorial 05">
+    <img src="editorial-06.jpg" alt="Editorial 06">
+    <img src="editorial-07.jpg" alt="Editorial 07">
+    <img src="editorial-08.jpg" alt="Editorial 08">
+    <img src="editorial-10.jpg" alt="Editorial 10">
+    <img src="editorial-11.jpg" alt="Editorial 11">
+    <img src="editorial-12.jpg" alt="Editorial 12">
+  </div>
+
+</section>
+
+<section class="about" id="about">
+  <span class="eyebrow">GET TO KNOW ME</span>
+  <h2>About Me.</h2>
+
+  <p>
+    I am Renzo Santarena, a model based in Uruguay,
+    passionate about fashion, visual storytelling
+    and creative expression.
+
+    Open to collaborations with fashion brands,
+    photographers, agencies, designers and creative
+    professionals.
+
+    Available for projects in fashion, advertising,
+    editorial photography and audiovisual productions.
+  </p>
+</section>
+
+<section class="details" id="details">
+  <h2>Model Details.</h2>
+
+  <div class="stats">
+    <div class="stat">
+      <h3>22</h3>
+      <p>AGE</p>
     </div>
 
-    <img src="main.jpg" alt="Renzo Santarena - Main Portrait">
-  </section>
-
-  <section class="section" id="portfolio">
-    <h2 class="section-title">Selected Work.</h2>
-
-    <div class="gallery">
-      <img src="editorial-01.jpg" alt="Editorial 01">
-      <img src="editorial-02.jpg" alt="Editorial 02">
-      <img src="editorial-03.jpg" alt="Editorial 03">
-      <img src="editorial-04.jpg" alt="Editorial 04">
-      <img src="editorial-05.jpg" alt="Editorial 05">
-      <img src="editorial-06.jpg" alt="Editorial 06">
-      <img src="editorial-07.jpg" alt="Editorial 07">
-      <img src="editorial-08.jpg" alt="Editorial 08">
-      <img src="editorial-10.jpg" alt="Editorial 10">
-      <img src="editorial-11.jpg" alt="Editorial 11">
-      <img src="editorial-12.jpg" alt="Editorial 12">
+    <div class="stat">
+      <h3>1.83 m</h3>
+      <p>HEIGHT</p>
     </div>
-  </section>
 
-  <section class="about" id="about">
-    <h2>About Me.</h2>
-
-    <p>
-      I am Renzo Santarena, a model based in Uruguay,
-      passionate about fashion, visual storytelling
-      and creative expression.
-
-      Open to collaborations with fashion brands,
-      photographers, agencies, designers and creative
-      professionals.
-
-      Available for projects in fashion, advertising,
-      editorial photography and audiovisual productions.
-    </p>
-  </section>
-
-  <section class="details" id="details">
-    <h2>Model Details.</h2>
-
-    <div class="stats">
-      <div class="stat">
-        <h3>22</h3>
-        <p>AGE</p>
-      </div>
-
-      <div class="stat">
-        <h3>1.83 m</h3>
-        <p>HEIGHT</p>
-      </div>
-
-      <div class="stat">
-        <h3>URUGUAY</h3>
-        <p>BASED IN</p>
-      </div>
+    <div class="stat">
+      <h3>URUGUAY</h3>
+      <p>BASED IN</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="services">
-    <h2>Areas of Work.</h2>
+<section class="services">
+  <h2>Areas of Work.</h2>
 
-    <p>
-      FASHION PHOTOGRAPHY<br>
-      EDITORIAL & COMMERCIAL CAMPAIGNS<br>
-      RUNWAY & FASHION SHOWS<br>
-      AUDIOVISUAL PRODUCTIONS<br>
-      BRAND CONTENT & CREATIVE PROJECTS<br>
-      COLLABORATIONS
-    </p>
-  </section>
+  <p>
+    FASHION PHOTOGRAPHY<br>
+    EDITORIAL & COMMERCIAL CAMPAIGNS<br>
+    RUNWAY & FASHION SHOWS<br>
+    AUDIOVISUAL PRODUCTIONS<br>
+    BRAND CONTENT & CREATIVE PROJECTS<br>
+    COLLABORATIONS
+  </p>
+</section>
 
-  <section class="contact" id="contact">
-    <h2>Let's Work Together.</h2>
+<section class="contact" id="contact">
+  <h2>Let's Work Together.</h2>
+  <p>Available for collaborations, campaigns and creative projects.</p>
 
-    <p>
-      Available for collaborations, campaigns
-      and creative projects.
-    </p>
+  <a href="https://www.instagram.com/renzo.afk/"
+     target="_blank" rel="noopener noreferrer">
+    INSTAGRAM
+  </a>
 
-    <a href="https://www.instagram.com/renzo.afk/"
-       target="_blank" rel="noopener noreferrer">
-      INSTAGRAM
-    </a>
-
-    <a href="mailto:rsantarena7@gmail.com">
-      EMAIL
-    </a>
-  </section>
+  <a href="mailto:rsantarena7@gmail.com">
+    EMAIL ME
+  </a>
+</section>
 
 </main>
 
