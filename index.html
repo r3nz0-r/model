@@ -1,4 +1,158 @@
-creativos, producciones fotográficas y colaboraciones
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Modelo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #111;
+        }
+
+        header {
+            padding: 30px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        header h1 {
+            font-size: 22px;
+            letter-spacing: 4px;
+        }
+
+        nav a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 13px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: #f2f2f2;
+        }
+
+        .hero h2 {
+            font-size: clamp(40px, 8vw, 85px);
+            letter-spacing: 5px;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            letter-spacing: 4px;
+            color: #666;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .about {
+            max-width: 650px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .details p {
+            margin: 12px 0;
+        }
+
+        footer {
+            padding: 40px 8%;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TU NOMBRE</h1>
+    <nav>
+        <a href="#book">BOOK</a>
+        <a href="#about">SOBRE MÍ</a>
+        <a href="#contact">CONTACTO</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h2>TU NOMBRE</h2>
+        <p>MODEL PORTFOLIO</p>
+    </div>
+</div>
+
+<section id="book">
+    <h2>BOOK FOTOGRÁFICO</h2>
+    <div class="gallery">
+        <img src="images/foto1.jpg" alt="Retrato de modelo">
+        <img src="images/foto2.jpg" alt="Fotografía editorial">
+        <img src="images/foto3.jpg" alt="Fotografía de moda">
+        <img src="images/foto4.jpg" alt="Fotografía de cuerpo entero">
+    </div>
+</section>
+
+<section id="about">
+    <h2>SOBRE MÍ</h2>
+    <p class="about">
+        Soy modelo en formación, interesado en el mundo
+        de la moda, la fotografía y la expresión artística.
+        Busco desarrollar mi carrera a través de proyectos
+        creativos, producciones fotográficas y colaboraciones
         con marcas y profesionales.
     </p>
 </section>
@@ -19,3 +173,7 @@ creativos, producciones fotográficas y colaboraciones
 
 </body>
 </html>
+
+
+
+Paso 2. Guardar el archivo
