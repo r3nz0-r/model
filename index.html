@@ -6,9 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Renzo Santarena | Model Portfolio</title>
-<meta name="description" content="Renzo Santarena - Fashion Model Portfolio">
+<meta name="description" content="Renzo Santarena - Fashion, Editorial and Commercial Model">
 
 <style>
+:root {
+  --cream: #f3eee4;
+  --terracotta: #c66c4c;
+  --blue: #244e59;
+  --black: #171717;
+  --yellow: #e9bd62;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,18 +28,42 @@ html {
 }
 
 body {
-  background: #eeece7;
-  color: #171717;
+  background: var(--cream);
+  color: var(--black);
   font-family: Arial, sans-serif;
 }
+
+/* TOP CONTACT BAR */
+
+.topbar {
+  background: var(--blue);
+  color: white;
+  padding: 13px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.topbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+}
+
+.topbar a:hover {
+  color: var(--yellow);
+}
+
+/* NAVIGATION */
 
 header {
   padding: 24px 6%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #bbb8b1;
-  background: #eeece7;
+  border-bottom: 1px solid #d2c9bb;
 }
 
 .logo {
@@ -42,29 +74,32 @@ header {
 
 nav {
   display: flex;
-  gap: 25px;
+  gap: 26px;
   flex-wrap: wrap;
 }
 
 nav a {
-  color: #171717;
+  color: var(--black);
   text-decoration: none;
   font-size: 10px;
   letter-spacing: 2px;
 }
 
 nav a:hover {
-  color: #987e62;
+  color: var(--terracotta);
 }
+
+/* HERO */
 
 .hero {
   min-height: 80vh;
   padding: 65px 7%;
   display: grid;
-  grid-template-columns: .9fr 1.1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 45px;
-  background: #dcd8d0;
+  background: var(--terracotta);
+  color: white;
 }
 
 .hero-text small {
@@ -75,9 +110,9 @@ nav a:hover {
 .hero h1 {
   font-family: Georgia, serif;
   font-size: clamp(48px, 7vw, 105px);
-  line-height: .95;
   font-weight: normal;
-  margin: 28px 0;
+  line-height: .95;
+  margin: 30px 0;
 }
 
 .hero-text p {
@@ -94,6 +129,8 @@ nav a:hover {
   display: block;
 }
 
+/* PORTFOLIO */
+
 .section {
   padding: 90px 6%;
 }
@@ -103,7 +140,7 @@ nav a:hover {
   justify-content: space-between;
   align-items: end;
   margin-bottom: 45px;
-  border-bottom: 1px solid #aaa69f;
+  border-bottom: 2px solid var(--black);
   padding-bottom: 20px;
 }
 
@@ -116,6 +153,7 @@ nav a:hover {
 .section-heading span {
   font-size: 10px;
   letter-spacing: 2px;
+  color: var(--terracotta);
 }
 
 .gallery {
@@ -131,25 +169,27 @@ nav a:hover {
   max-height: 700px;
   object-fit: contain;
   display: block;
-  background: #e1ded8;
-  transition: transform .35s ease;
+  background: #e4ded2;
+  transition: transform .3s ease;
 }
 
 .gallery img:hover {
-  transform: scale(1.015);
+  transform: translateY(-5px);
 }
 
+/* ABOUT */
+
 .about {
-  background: #222;
-  color: #f5f2eb;
+  background: var(--blue);
+  color: white;
   padding: 110px 12%;
   text-align: center;
 }
 
-.about .eyebrow {
+.eyebrow {
   font-size: 10px;
   letter-spacing: 4px;
-  color: #b8a58c;
+  color: var(--yellow);
 }
 
 .about h2 {
@@ -162,14 +202,16 @@ nav a:hover {
 .about p {
   max-width: 720px;
   margin: auto;
-  color: #d0ccc5;
+  color: #e3e5e0;
   font-size: 15px;
   line-height: 2;
 }
 
+/* DETAILS */
+
 .details {
   padding: 90px 7%;
-  background: #dcd8d0;
+  background: var(--yellow);
   text-align: center;
 }
 
@@ -189,12 +231,12 @@ nav a:hover {
 
 .stat {
   padding: 25px 10px;
-  border-top: 1px solid #aaa69f;
+  border-top: 1px solid #8f7548;
 }
 
 .stat h3 {
   font-family: Georgia, serif;
-  font-size: 35px;
+  font-size: 36px;
   font-weight: normal;
 }
 
@@ -204,10 +246,12 @@ nav a:hover {
   letter-spacing: 3px;
 }
 
+/* SERVICES */
+
 .services {
   padding: 90px 8%;
   text-align: center;
-  background: #f7f5f0;
+  background: var(--cream);
 }
 
 .services p {
@@ -216,8 +260,11 @@ nav a:hover {
   letter-spacing: 2px;
 }
 
+/* CONTACT */
+
 .contact {
-  background: #b9a994;
+  background: var(--terracotta);
+  color: white;
   text-align: center;
   padding: 100px 20px;
 }
@@ -238,8 +285,8 @@ nav a:hover {
   display: inline-block;
   margin: 35px 12px 0;
   padding: 14px 25px;
-  border: 1px solid #222;
-  color: #222;
+  border: 1px solid white;
+  color: white;
   text-decoration: none;
   font-size: 11px;
   letter-spacing: 2px;
@@ -247,20 +294,36 @@ nav a:hover {
 }
 
 .contact a:hover {
-  background: #222;
-  color: white;
+  background: white;
+  color: var(--terracotta);
 }
 
+/* FOOTER */
+
 footer {
-  background: #222;
-  color: #ccc;
+  background: var(--black);
+  color: #ddd;
   text-align: center;
   padding: 25px;
   font-size: 10px;
   letter-spacing: 2px;
 }
 
+/* MOBILE */
+
 @media (max-width: 800px) {
+
+  .topbar {
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 9px;
+  }
+
+  .topbar a {
+    margin-left: 8px;
+  }
+
   header {
     flex-direction: column;
     gap: 22px;
@@ -269,6 +332,10 @@ footer {
   nav {
     justify-content: center;
     gap: 15px;
+  }
+
+  nav a {
+    font-size: 9px;
   }
 
   .hero {
@@ -311,6 +378,7 @@ footer {
 }
 
 @media (max-width: 420px) {
+
   .gallery {
     grid-template-columns: 1fr;
   }
@@ -324,8 +392,28 @@ footer {
 
 <body>
 
+<!-- SOCIAL MEDIA AND EMAIL -->
+
+<div class="topbar">
+  <span>RENZO SANTARENA · MODEL</span>
+
+  <div>
+    <a href="https://www.instagram.com/renzo.afk/"
+       target="_blank" rel="noopener noreferrer">
+       INSTAGRAM ↗
+    </a>
+
+    <a href="mailto:rsantarena7@gmail.com">
+       EMAIL ↗
+    </a>
+  </div>
+</div>
+
+<!-- HEADER -->
+
 <header id="home">
-  <div class="logo">RENZO SANTARENA</div>
+
+  <div class="logo">RENZO SANTARENA.</div>
 
   <nav>
     <a href="#home">HOME</a>
@@ -334,31 +422,43 @@ footer {
     <a href="#details">DETAILS</a>
     <a href="#contact">CONTACT</a>
   </nav>
+
 </header>
 
 <main>
 
+<!-- MAIN PRESENTATION -->
+
 <section class="hero">
+
   <div class="hero-text">
+
     <small>MODEL PORTFOLIO · 2026</small>
+
     <h1>RENZO<br>SANTARENA.</h1>
+
     <p>
       FASHION · EDITORIAL<br>
       ADVERTISING · AUDIOVISUAL
     </p>
+
   </div>
 
   <img src="main.jpg" alt="Renzo Santarena">
+
 </section>
+
+<!-- PORTFOLIO -->
 
 <section class="section" id="portfolio">
 
   <div class="section-heading">
     <h2>Selected Work.</h2>
-    <span>01 — 11 / EDITORIAL</span>
+    <span>EDITORIAL · 2026</span>
   </div>
 
   <div class="gallery">
+
     <img src="editorial-01.jpg" alt="Editorial 01">
     <img src="editorial-02.jpg" alt="Editorial 02">
     <img src="editorial-03.jpg" alt="Editorial 03">
@@ -370,12 +470,17 @@ footer {
     <img src="editorial-10.jpg" alt="Editorial 10">
     <img src="editorial-11.jpg" alt="Editorial 11">
     <img src="editorial-12.jpg" alt="Editorial 12">
+
   </div>
 
 </section>
 
+<!-- ABOUT -->
+
 <section class="about" id="about">
+
   <span class="eyebrow">GET TO KNOW ME</span>
+
   <h2>About Me.</h2>
 
   <p>
@@ -390,12 +495,17 @@ footer {
     Available for projects in fashion, advertising,
     editorial photography and audiovisual productions.
   </p>
+
 </section>
 
+<!-- DETAILS -->
+
 <section class="details" id="details">
+
   <h2>Model Details.</h2>
 
   <div class="stats">
+
     <div class="stat">
       <h3>22</h3>
       <p>AGE</p>
@@ -410,10 +520,15 @@ footer {
       <h3>URUGUAY</h3>
       <p>BASED IN</p>
     </div>
+
   </div>
+
 </section>
 
+<!-- AREAS OF WORK -->
+
 <section class="services">
+
   <h2>Areas of Work.</h2>
 
   <p>
@@ -424,11 +539,19 @@ footer {
     BRAND CONTENT & CREATIVE PROJECTS<br>
     COLLABORATIONS
   </p>
+
 </section>
 
+<!-- CONTACT -->
+
 <section class="contact" id="contact">
+
   <h2>Let's Work Together.</h2>
-  <p>Available for collaborations, campaigns and creative projects.</p>
+
+  <p>
+    Available for collaborations, campaigns
+    and creative projects.
+  </p>
 
   <a href="https://www.instagram.com/renzo.afk/"
      target="_blank" rel="noopener noreferrer">
@@ -438,6 +561,7 @@ footer {
   <a href="mailto:rsantarena7@gmail.com">
     EMAIL ME
   </a>
+
 </section>
 
 </main>
